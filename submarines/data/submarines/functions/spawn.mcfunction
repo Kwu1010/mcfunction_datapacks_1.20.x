@@ -10,7 +10,7 @@ execute as @e[type=endermite,name="Submarine Spawn Egg",tag=proximity] at @s run
 
 # Fail Spawn If On Land
 execute as @e[type=endermite,name="Submarine Spawn Egg"] at @s unless block ~ ~ ~ #submarines:sea_traversable run function submarines:call_spawn_egg
-execute as @e[type=endermite,name="Submarine Spawn Egg"] at @s unless block ~ ~ ~ #submarines:sea_traversable run tellraw @p[scores={placed_spawn_egg=1..}] {"text":"[Server] Unable to spawn a submarine on land/rails.","color":"yellow"}
+execute as @e[type=endermite,name="Submarine Spawn Egg"] at @s unless block ~ ~ ~ #submarines:sea_traversable run tellraw @p[scores={placed_spawn_egg=1..},distance=..6,tag=!mute_notifications] {"text":"[Server] Unable to spawn a submarine on land/rails.","color":"yellow"}
 execute as @e[type=endermite,name="Submarine Spawn Egg"] at @s unless block ~ ~ ~ #submarines:sea_traversable run kill @s
 
 # Spawn Submarine Components

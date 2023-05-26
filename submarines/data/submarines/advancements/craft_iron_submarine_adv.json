@@ -3,11 +3,11 @@
         "submarine": {
             "trigger": "minecraft:recipe_unlocked",
             "conditions": {
-                "recipe": "submarine:iron_submarine"
+                "recipe": "submarines:iron_submarine"
             }
         }
     },
     "rewards": {
-        "function": "submarine:craft_submarine"
+        "function": "submarines:craft_submarine"
     }
 }

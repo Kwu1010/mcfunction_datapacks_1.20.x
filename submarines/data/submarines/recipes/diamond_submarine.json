@@ -1,14 +1,11 @@
 {
   "type": "crafting_shaped",
   "pattern": [
-    "#A#",
+    "AOA",
     "OBO",
-    "XCX"
+    "XXX"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:cyan_dye"
-    },
     "X": {
       "item": "minecraft:polished_diorite"
     },
@@ -20,9 +17,6 @@
     },
     "B": {
       "item": "minecraft:diamond_horse_armor"
-    },
-    "C": {
-      "item": "minecraft:hopper"
     }
   },
   "result": {
