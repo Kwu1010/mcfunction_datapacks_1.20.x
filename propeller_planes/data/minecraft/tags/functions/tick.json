@@ -1,0 +1,21 @@
+{
+    "values": [
+		"propeller_planes:init",
+		"propeller_planes:tick",
+		"propeller_planes:globals",
+		"propeller_planes:spawn",
+		"propeller_planes:despawn_conditions",
+		"propeller_planes:despawner",
+		"propeller_planes:detonator",
+		"propeller_planes:model",
+		"propeller_planes:speed_controls",
+		"propeller_planes:display_throttle",
+		"propeller_planes:change_exterior",
+		"propeller_planes:engine_sound",
+		"propeller_planes:world_wrap",
+		"propeller_planes:mute_notifications",
+		"propeller_planes:crafting_recipe",
+		"propeller_planes:operator_manual",
+		"propeller_planes:damage_registration"
+	]
+}

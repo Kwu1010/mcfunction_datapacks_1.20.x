@@ -1,0 +1,22 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "###",
+    "#X#",
+    "#O#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:copper_ingot"
+    },
+    "X": {
+      "item": "minecraft:firework_star"
+    },
+    "O": {
+      "item": "minecraft:firework_rocket"
+    }
+  },
+  "result": {
+    "item": "minecraft:barrier"
+  }
+}

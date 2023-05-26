@@ -1,0 +1,31 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "#A#",
+    "OBO",
+    "XCX"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:cyan_dye"
+    },
+    "X": {
+      "item": "minecraft:polished_diorite"
+    },
+    "O": {
+      "item": "minecraft:copper_ingot"
+    },
+    "A": {
+      "item": "minecraft:iron_block"
+    },
+    "B": {
+      "item": "minecraft:iron_horse_armor"
+    },
+    "C": {
+      "item": "minecraft:hopper"
+    }
+  },
+  "result": {
+    "item": "minecraft:barrier"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "#A#",
+    "OBO",
+    "XCX"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:iron_block"
+    },
+    "X": {
+      "item": "minecraft:coal_block"
+    },
+    "O": {
+      "item": "minecraft:copper_ingot"
+    },
+    "A": {
+      "item": "minecraft:tinted_glass"
+    },
+    "B": {
+      "item": "minecraft:saddle"
+    },
+    "C": {
+      "item": "minecraft:redstone_block"
+    }
+  },
+  "result": {
+    "item": "minecraft:barrier"
+  }
+}
