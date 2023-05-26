@@ -1,9 +1,9 @@
 {
   "type": "crafting_shaped",
   "pattern": [
-    "###",
-    "OBO",
-    "#CX"
+    "X##",
+    "OOB",
+    "C##"
   ],
   "key": {
     "#": {

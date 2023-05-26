@@ -10,6 +10,7 @@
 		"202:weapon_status",
 		"202:weapon_limit",
 		"202:flares",
-		"202:flare_gun"
+		"202:flare_gun",
+		"202:crafting_recipe"
 	]
 }
