@@ -13,7 +13,6 @@
 		"propeller_planes:change_exterior",
 		"propeller_planes:engine_sound",
 		"propeller_planes:world_wrap",
-		"propeller_planes:mute_notifications",
 		"propeller_planes:crafting_recipe",
 		"propeller_planes:operator_manual",
 		"propeller_planes:damage_registration"
