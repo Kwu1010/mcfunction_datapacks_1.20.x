@@ -71,7 +71,7 @@ execute as @e[tag=plane,tag=seat,tag=exterior_change,scores={change_counter=6..6
 
 execute as @e[tag=plane,tag=seat,tag=exterior_change,scores={change_counter=9..9}] at @s as @e[tag=plane,tag=model,distance=..4] at @s run item replace entity @s armor.head with structure_void{CustomModelData:14}
 execute as @e[tag=plane,tag=seat,tag=exterior_change,scores={change_counter=9..9}] at @s as @e[tag=plane,tag=tail,distance=..4] at @s run item replace entity @s armor.head with air
-execute as @e[tag=plane,tag=seat,tag=exterior_change,scores={change_counter=9..9}] at @s as @e[tag=plane,tag=propeller,distance=..4] at @s run item replace entity @s armor.head with air
+execute as @e[tag=plane,tag=seat,scores={change_counter=9..9}] at @s as @e[tag=plane,tag=propeller,distance=..4] at @s run item replace entity @s armor.head with air
 execute as @e[tag=plane,tag=seat,tag=exterior_change,scores={change_counter=9..9}] at @s as @e[tag=plane,tag=model,distance=..4] at @s run data modify entity @s Pose.Head[1] set value 0.1f
 
 execute as @e[tag=plane,tag=seat,tag=exterior_change,scores={change_counter=10..10}] at @s as @e[tag=plane,tag=model,distance=..4] at @s run item replace entity @s armor.head with structure_void{CustomModelData:15}
