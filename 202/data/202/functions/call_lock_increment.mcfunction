@@ -8,6 +8,9 @@ execute as @e[tag=missile_ptr] at @s anchored eyes facing entity @e[tag=target_p
 # Increment If No Targets In Range
 execute as @e[tag=missile_ptr] at @s unless entity @e[tag=target_ptr] run tp @s ^ ^ ^2.2
 
+# Lock On Alert
+execute as @e[tag=target_lock] at @s run playsound minecraft:block.note_block.pling master @p[distance=..4] ~ ~ ~ 1 2
+
 # Remove Pointers
 tag @e[tag=target_lock] remove target_ptr
 tag @s remove missile_ptr

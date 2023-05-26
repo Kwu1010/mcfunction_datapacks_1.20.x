@@ -59,3 +59,6 @@ tag @a remove hold_snowball
 tag @a[nbt={SelectedItem:{id:"minecraft:snowball",tag:{display:{Name:"\"Flare\""}}}}] add hold_flare
 tag @a[nbt={Inventory:[{id:"minecraft:snowball",Slot:-106b,tag:{display:{Name:"\"Flare\""}}}]}] add hold_flare_offhand
 tag @a[nbt={SelectedItem:{id:"minecraft:snowball"}}] add hold_snowball
+
+# Entity And Block Collision
+execute as @e[tag=flare] at @s unless block ~ ~1 ~ #202:non_solid run kill @s

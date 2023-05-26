@@ -5,6 +5,8 @@ scoreboard players add @e[tag=missile] missile_lifetime 1
 execute as @e[tag=missile,tag=ap_shell] at @s if entity @e[type=!#202:non_targets,tag=!flare,tag=!missile,distance=..2] run tag @s add impact
 execute as @e[tag=missile,tag=ap_shell] at @s if entity @e[tag=flare,tag=target,distance=..3] run tag @s add impact
 execute as @e[tag=missile,tag=ap_shell] at @s unless block ~ ~1 ~ #202:non_solid run tag @s add impact
+execute as @e[tag=missile,tag=ap_shell] at @s if block ~ ~1 ~ water run tag @s add impact
+execute as @e[tag=missile,tag=ap_shell] at @s if block ~ ~1 ~ lava run tag @s add impact
 execute as @e[tag=missile,tag=ap_shell,scores={missile_lifetime=100..}] run tag @s add impact
 
 # Impact Function
@@ -15,6 +17,8 @@ execute as @e[tag=missile,tag=impact] at @s run kill @s
 execute as @e[tag=missile,tag=he_shell] at @s if entity @e[type=!#202:non_targets,tag=!flare,tag=!missile,distance=..3] run tag @s add detonate
 execute as @e[tag=missile,tag=he_shell] at @s if entity @e[tag=flare,tag=target,distance=..3] run tag @s add detonate
 execute as @e[tag=missile,tag=he_shell] at @s unless block ~ ~1 ~ #202:non_solid run tag @s add detonate
+execute as @e[tag=missile,tag=he_shell] at @s if block ~ ~1 ~ water run tag @s add detonate
+execute as @e[tag=missile,tag=he_shell] at @s if block ~ ~1 ~ lava run tag @s add detonate
 execute as @e[tag=missile,tag=he_shell,scores={missile_lifetime=100..}] run tag @s add detonate
 
 # Detonation Function

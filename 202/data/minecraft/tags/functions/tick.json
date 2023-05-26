@@ -11,6 +11,7 @@
 		"202:weapon_limit",
 		"202:flares",
 		"202:flare_gun",
-		"202:crafting_recipe"
+		"202:crafting_recipe",
+		"202:call_datapack_items"
 	]
 }
