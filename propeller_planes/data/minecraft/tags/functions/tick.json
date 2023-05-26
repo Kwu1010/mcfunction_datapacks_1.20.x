@@ -15,6 +15,7 @@
 		"propeller_planes:world_wrap",
 		"propeller_planes:crafting_recipe",
 		"propeller_planes:operator_manual",
-		"propeller_planes:damage_registration"
+		"propeller_planes:damage_registration",
+		"propeller_planes:force_despawn"
 	]
 }
