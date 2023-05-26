@@ -19,5 +19,3 @@ scoreboard players set nonmisc change_counter 9
 scoreboard players set tako change_counter 9
 scoreboard players set ups change_counter 10
 scoreboard players set tardis change_counter 11
-scoreboard players set lock_one era_lock 1
-scoreboard players set lock_two era_lock 2

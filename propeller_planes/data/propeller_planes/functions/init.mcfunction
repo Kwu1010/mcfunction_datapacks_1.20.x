@@ -14,4 +14,6 @@ scoreboard objectives add x-pos dummy
 scoreboard objectives add z-pos dummy
 scoreboard objectives add mute_notifications trigger
 scoreboard players enable @a mute_notifications
+
+# Duplicate Scoreboards In Case Dependencies Are Not Added
 scoreboard objectives add era_lock dummy
