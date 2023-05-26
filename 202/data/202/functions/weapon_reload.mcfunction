@@ -11,7 +11,7 @@ execute as @a[nbt={SelectedItem:{id:"minecraft:knowledge_book",tag:{display:{Nam
 execute as @a[tag=hold_202,scores={dropped_202=1..}] run tag @s add reload_202
 scoreboard players set @a[tag=!reload_202] reload_202 0
 scoreboard players add @a[tag=reload_202] reload_202 1
-execute as @a[tag=reload_202,tag=!reload_202_ap,tag=!reload_202_he,scores={reload_202=100..}] run tellraw @s {"text":"[Server] Failed to reload, equip ammo in your offhand!","color":"yellow"}
+execute as @a[tag=reload_202,tag=!reload_202_ap,tag=!reload_202_he,scores={reload_202=100..}] run tellraw @s[tag=!mute_notifications] {"text":"[Server] Failed to reload, equip ammo in your offhand!","color":"yellow"}
 execute as @a[tag=reload_202,tag=reload_202_ap,scores={reload_202=100..}] run clear @s minecraft:command_block{display:{Name:"\"AP Shell\""}} 1
 execute as @a[tag=reload_202,tag=reload_202_ap,scores={reload_202=100..}] at @s run playsound minecraft:custom.reload_202 player @a ~ ~ ~ 1 1
 execute as @a[tag=reload_202,tag=reload_202_ap,scores={reload_202=100..}] run item replace entity @s weapon.mainhand with minecraft:knowledge_book{Recipes:["minecraft:crafting_table"],display:{Name:"\"M202\"",Lore:["\"AP Shell\""]},CustomModelData:1}

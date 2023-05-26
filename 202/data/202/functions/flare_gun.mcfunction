@@ -27,7 +27,7 @@ execute as @a[tag=replenish_flaregun,tag=hold_flaregun] at @s run item replace e
 execute as @a[tag=replenish_flaregun,tag=hold_flaregun] at @s run kill @e[type=item,limit=1,sort=nearest,distance=..4,nbt={Item:{id:"minecraft:knowledge_book",Count:1b,tag:{display:{Name:"\"Flare Gun\""}}}}]
 
 # Fail To Reload Loaded Weapon
-execute as @a[tag=replenish_flaregun,tag=hold_flaregun_loaded] run tellraw @s {"text":"[Server] Failed to reload, flare gun is already loaded!","color":"yellow"}
+execute as @a[tag=replenish_flaregun,tag=hold_flaregun_loaded] run tellraw @s[tag=!mute_notifications] {"text":"[Server] Failed to reload, flare gun is already loaded!","color":"yellow"}
 execute as @a[tag=replenish_flaregun,tag=hold_flaregun_loaded] run item replace entity @s weapon.mainhand with minecraft:knowledge_book{Recipes:["minecraft:crafting_table"],display:{Name:"\"Flare Gun\"",Lore:["\"Flare\""]},CustomModelData:4}
 execute as @a[tag=replenish_flaregun,tag=hold_flaregun_loaded,scores={dropped_flaregun=1..}] run tag @s remove replenish_flaregun
 
@@ -35,7 +35,7 @@ execute as @a[tag=replenish_flaregun,tag=hold_flaregun_loaded,scores={dropped_fl
 execute as @a[tag=!hold_flaregun] run tag @s remove reload_flaregun
 scoreboard players set @a[tag=!reload_flaregun] reload_flaregun 0
 scoreboard players add @a[tag=reload_flaregun] reload_flaregun 1
-execute as @a[tag=reload_flaregun,scores={reload_flaregun=200..},tag=!holding_flare] run tellraw @s {"text":"[Server] Failed to reload, equip ammo in your offhand!","color":"yellow"}
+execute as @a[tag=reload_flaregun,scores={reload_flaregun=200..},tag=!holding_flare] run tellraw @s[tag=!mute_notifications] {"text":"[Server] Failed to reload, equip ammo in your offhand!","color":"yellow"}
 execute as @a[tag=reload_flaregun,scores={reload_flaregun=200..},tag=holding_flare] run clear @s minecraft:snowball{display:{Name:"\"Flare\""}} 1
 execute as @a[tag=reload_flaregun,scores={reload_flaregun=200..},tag=holding_flare] at @s run playsound minecraft:custom.reload_202 player @a ~ ~ ~ 1 1
 execute as @a[tag=reload_flaregun,scores={reload_flaregun=200..},tag=holding_flare] run item replace entity @s weapon.mainhand with minecraft:knowledge_book{Recipes:["minecraft:crafting_table"],display:{Name:"\"Flare Gun\"",Lore:["\"Flare\""]},CustomModelData:4}

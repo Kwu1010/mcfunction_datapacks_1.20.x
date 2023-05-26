@@ -14,10 +14,10 @@ execute as @a[tag=replenish_202,tag=hold_202] at @s run kill @e[type=item,limit=
 execute as @a[tag=replenish_202,tag=hold_202] run item replace entity @s weapon.mainhand with minecraft:knowledge_book{Recipes:["minecraft:crafting_table"],display:{Name:"\"M202\"",Lore:["\"Empty\""]},CustomModelData:1}
 
 # Fail To Reload Loaded Weapon
-execute as @a[tag=replenish_202,tag=hold_202_ap,scores={dropped_202=1..}] run tellraw @s {"text":"[Server] Failed to reload, weapon is already loaded!","color":"yellow"}
+execute as @a[tag=replenish_202,tag=hold_202_ap,scores={dropped_202=1..}] run tellraw @s[tag=!mute_notifications] {"text":"[Server] Failed to reload, weapon is already loaded!","color":"yellow"}
 execute as @a[tag=replenish_202,tag=hold_202_ap,scores={dropped_202=1..}] run item replace entity @s weapon.mainhand with minecraft:knowledge_book{Recipes:["minecraft:crafting_table"],display:{Name:"\"M202\"",Lore:["\"AP Shell\""]},CustomModelData:1}
 execute as @a[tag=replenish_202,tag=hold_202_ap,scores={dropped_202=1..}] run tag @s remove replenish_202
-execute as @a[tag=replenish_202,tag=hold_202_he,scores={dropped_202=1..}] run tellraw @s {"text":"[Server] Failed to reload, weapon is already loaded!","color":"yellow"}
+execute as @a[tag=replenish_202,tag=hold_202_he,scores={dropped_202=1..}] run tellraw @s[tag=!mute_notifications] {"text":"[Server] Failed to reload, weapon is already loaded!","color":"yellow"}
 execute as @a[tag=replenish_202,tag=hold_202_he,scores={dropped_202=1..}] run item replace entity @s weapon.mainhand with minecraft:knowledge_book{Recipes:["minecraft:crafting_table"],display:{Name:"\"M202\"",Lore:["\"HE Shell\""]},CustomModelData:1}
 execute as @a[tag=replenish_202,tag=hold_202_he,scores={dropped_202=1..}] run tag @s remove replenish_202
 

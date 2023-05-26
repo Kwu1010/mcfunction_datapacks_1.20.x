@@ -28,11 +28,11 @@ execute as @e[tag=flare,tag=launched] at @s run particle minecraft:flash ~ ~ ~ 0
 execute as @e[tag=flare,tag=launched] at @s run particle minecraft:end_rod ~ ~ ~ 0 0 0 0 1 force
 
 # Fail Firing Flare Outside Plane
-execute as @a[tag=hold_flare,tag=!hold_flare_offhand,tag=!pilot,scores={fired_flare=1..}] run tellraw @s {"text":"[Server] Failed to fire flares, you are not in a plane!","bold":"true","color":"yellow"}
+execute as @a[tag=hold_flare,tag=!hold_flare_offhand,tag=!pilot,scores={fired_flare=1..}] run tellraw @s[tag=!mute_notifications] {"text":"[Server] Failed to fire flares, you are not in a plane!","bold":"true","color":"yellow"}
 execute as @a[tag=hold_flare,tag=!hold_flare_offhand,tag=!pilot,scores={fired_flare=1..}] run give @s minecraft:snowball{CustomModelData:1,display:{Name:"\"Flare\"",Lore:['"Use To Deploy Flare In Planes"','"Hold In Offhand And Press Q While Holding Flare Gun To Reload"']}}
-execute as @a[tag=hold_flare_offhand,tag=!hold_snowball,tag=!pilot,scores={fired_flare=1..}] run tellraw @s {"text":"[Server] Failed to fire flares, you are not in a plane!","bold":"true","color":"yellow"}
+execute as @a[tag=hold_flare_offhand,tag=!hold_snowball,tag=!pilot,scores={fired_flare=1..}] run tellraw @s[tag=!mute_notifications] {"text":"[Server] Failed to fire flares, you are not in a plane!","bold":"true","color":"yellow"}
 execute as @a[tag=hold_flare_offhand,tag=!hold_snowball,tag=!pilot,scores={fired_flare=1..}] run give @s minecraft:snowball{CustomModelData:1,display:{Name:"\"Flare\"",Lore:['"Use To Deploy Flare In Planes"','"Hold In Offhand And Press Q While Holding Flare Gun To Reload"']}}
-execute as @a[tag=hold_flare_offhand,tag=hold_flare,tag=!pilot,scores={fired_flare=1..}] run tellraw @s {"text":"[Server] Failed to fire flares, you are not in a plane!","bold":"true","color":"yellow"}
+execute as @a[tag=hold_flare_offhand,tag=hold_flare,tag=!pilot,scores={fired_flare=1..}] run tellraw @s[tag=!mute_notifications] {"text":"[Server] Failed to fire flares, you are not in a plane!","bold":"true","color":"yellow"}
 execute as @a[tag=hold_flare_offhand,tag=hold_flare,tag=!pilot,scores={fired_flare=1..}] run give @s minecraft:snowball{CustomModelData:1,display:{Name:"\"Flare\"",Lore:['"Use To Deploy Flare In Planes"','"Hold In Offhand And Press Q While Holding Flare Gun To Reload"']}}
 
 # Firing Flare
