@@ -1,22 +1,16 @@
 {
   "type": "crafting_shaped",
   "pattern": [
-    "#A#",
+    "#C#",
     "OBO",
-    "XCX"
+    "OOO"
   ],
   "key": {
     "#": {
       "item": "minecraft:iron_block"
     },
-    "X": {
-      "item": "minecraft:coal_block"
-    },
     "O": {
       "item": "minecraft:copper_ingot"
-    },
-    "A": {
-      "item": "minecraft:tinted_glass"
     },
     "B": {
       "item": "minecraft:saddle"
