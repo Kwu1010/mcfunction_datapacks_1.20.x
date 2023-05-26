@@ -8,6 +8,6 @@
         }
     },
     "rewards": {
-        "function": "submarine:craft_iron_submarine"
+        "function": "submarine:craft_submarine"
     }
 }
