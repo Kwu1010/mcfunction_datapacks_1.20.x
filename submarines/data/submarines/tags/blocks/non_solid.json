@@ -59,6 +59,7 @@
 		"minecraft:vine",
 		"#minecraft:crops",
 		"minecraft:sugar_cane",
-		"minecraft:cave_air"
+		"minecraft:cave_air",
+		"#minecraft:fire"
 	]
 }
