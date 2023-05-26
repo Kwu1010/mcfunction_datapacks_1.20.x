@@ -1,7 +1,10 @@
 # Copy Exterior Data To Player
-execute as @a[scores={change_counter=4..},name=!Totally_Normal,name=!TwoCanOfTuna] at @s if score era_lock era_lock < lock_one era_lock run scoreboard players set @s change_counter 0
-execute as @a[scores={change_counter=6..},name=!Totally_Normal,name=!TwoCanOfTuna] at @s if score era_lock era_lock < lock_two era_lock run scoreboard players set @s change_counter 0
-execute as @a[scores={change_counter=7..},name=!Totally_Normal,name=!TwoCanOfTuna] at @s run scoreboard players set @s change_counter 0
+execute as @a[scores={change_counter=4..},name=!Totally_Normal,name=!TwoCanOfTuna,tag=!cc] at @s if score setting era_lock < lock_one era_lock run scoreboard players set @s change_counter 0
+execute as @a[scores={change_counter=6..},name=!Totally_Normal,name=!TwoCanOfTuna,tag=!cc] at @s if score setting era_lock < lock_two era_lock run scoreboard players set @s change_counter 0
+execute as @a[scores={change_counter=7..},name=!Totally_Normal,name=!TwoCanOfTuna,tag=!cc] at @s run scoreboard players set @s change_counter 0
+execute as @a[scores={change_counter=10..},name=!Totally_Normal,name=!TwoCanOfTuna,tag=cc] at @s run scoreboard players set @s change_counter 0
+execute as @a[tag=cc,scores={change_counter=4..8},name=!Totally_Normal,name=!TwoCanOfTuna] at @s if score setting era_lock < lock_one era_lock run scoreboard players set @s change_counter 9
+execute as @a[tag=cc,scores={change_counter=6..8},name=!Totally_Normal,name=!TwoCanOfTuna] at @s if score setting era_lock < lock_two era_lock run scoreboard players set @s change_counter 9
 execute as @a[scores={change_counter=7..8}] at @s run scoreboard players set @s change_counter 9
 execute as @e[tag=plane,tag=!seat] at @s store result score @s change_counter run scoreboard players get @e[tag=plane,tag=seat,distance=..4,limit=1] change_counter
 
@@ -21,9 +24,13 @@ execute as @e[tag=plane,tag=seat,nbt={ArmorItem:{id:"minecraft:diamond_horse_arm
 # Exterior Type Rotation
 execute as @e[tag=plane,tag=seat,tag=exterior_change] at @s run scoreboard players add @s change_counter 1
 execute as @e[tag=plane,tag=seat,tag=exterior_change] at @s as @p[distance=..4] at @s store result score @s change_counter run scoreboard players get @e[tag=plane,tag=seat,distance=..4,limit=1] change_counter
-execute as @e[tag=plane,tag=seat,tag=exterior_change,scores={change_counter=4..}] at @s if score era_lock era_lock < lock_one era_lock unless entity @a[name=Totally_Normal,distance=..4] unless entity @a[name=TwoCanOfTuna,distance=..4] run scoreboard players set @s change_counter 0
-execute as @e[tag=plane,tag=seat,tag=exterior_change,scores={change_counter=6..}] at @s if score era_lock era_lock < lock_two era_lock unless entity @a[name=Totally_Normal,distance=..4] unless entity @a[name=TwoCanOfTuna,distance=..4] run scoreboard players set @s change_counter 0
-execute as @e[tag=plane,tag=seat,tag=exterior_change,scores={change_counter=7..}] at @s unless entity @a[name=Totally_Normal,distance=..4] unless entity @a[name=TwoCanOfTuna,distance=..4] run scoreboard players set @s change_counter 0
+execute as @e[tag=plane,tag=seat,tag=exterior_change,scores={change_counter=4..}] at @s if score setting era_lock < lock_one era_lock unless entity @a[tag=cc,distance=..4] unless entity @a[name=Totally_Normal,distance=..4] unless entity @a[name=TwoCanOfTuna,distance=..4] run scoreboard players set @s change_counter 0
+execute as @e[tag=plane,tag=seat,tag=exterior_change,scores={change_counter=6..}] at @s if score setting era_lock < lock_two era_lock unless entity @a[tag=cc,distance=..4] unless entity @a[name=Totally_Normal,distance=..4] unless entity @a[name=TwoCanOfTuna,distance=..4] run scoreboard players set @s change_counter 0
+execute as @e[tag=plane,tag=seat,tag=exterior_change,scores={change_counter=7..}] at @s unless entity @a[tag=cc,distance=..4] unless entity @a[name=Totally_Normal,distance=..4] unless entity @a[name=TwoCanOfTuna,distance=..4] run scoreboard players set @s change_counter 0
+execute as @e[tag=plane,tag=seat,tag=exterior_change,scores={change_counter=4..9}] at @s if score setting era_lock < lock_one era_lock if entity @a[tag=cc,distance=..4,name=!Totally_Normal,name=!TwoCanOfTuna] run scoreboard players set @s change_counter 9
+execute as @e[tag=plane,tag=seat,tag=exterior_change,scores={change_counter=6..9}] at @s if score setting era_lock < lock_two era_lock if entity @a[tag=cc,distance=..4,name=!Totally_Normal,name=!TwoCanOfTuna] run scoreboard players set @s change_counter 9
+execute as @e[tag=plane,tag=seat,tag=exterior_change,scores={change_counter=7..9}] at @s if entity @a[tag=cc,distance=..4,name=!Totally_Normal,name=!TwoCanOfTuna] run scoreboard players set @s change_counter 9
+execute as @e[tag=plane,tag=seat,tag=exterior_change,scores={change_counter=10..}] at @s if entity @a[tag=cc,distance=..4,name=!Totally_Normal,name=!TwoCanOfTuna] run scoreboard players set @s change_counter 0
 execute as @e[tag=plane,tag=seat,tag=exterior_change,scores={change_counter=7..8}] at @s run scoreboard players set @s change_counter 9
 execute as @e[tag=plane,tag=seat,tag=exterior_change,scores={change_counter=12..}] at @s run scoreboard players set @s change_counter 0
 
