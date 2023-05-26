@@ -1,10 +1,10 @@
-# Init Missile Tracking Scores
+# Init Era Lock Scores
 scoreboard objectives add era_lock dummy
 scoreboard players set lock_one era_lock 1
 scoreboard players set lock_two era_lock 2
 execute unless score setting era_lock <= lock_two era_lock run scoreboard players set setting era_lock 0
 
-# Missile Tracking Trigger
+# Era Lock Trigger
 scoreboard objectives add config_era_lock trigger
 scoreboard players enable @a[tag=op] config_era_lock
 scoreboard players reset @a[tag=!op] config_era_lock
