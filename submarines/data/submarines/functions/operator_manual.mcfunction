@@ -1,71 +1,82 @@
 scoreboard objectives add manual-submarine trigger
 scoreboard players enable @a manual-submarine
 
-tellraw @a[scores={manual-submarine=1..1}] {"text":"[Submarine Operator Manual - Page 1 of 4]","color":"gold","bold":"true"}
+tellraw @a[scores={manual-submarine=1..1}] {"text":"[Submarine Operator Manual - Page 1 of 5]","color":"gold","bold":"true"}
+tellraw @a[scores={manual-submarine=1..1}] {"text":"Page 1 - Table of Contents","color":"gold","bold":"false"}
+tellraw @a[scores={manual-submarine=1..1}] {"text":"Page 2 - Disclaimers & Warnings","color":"gold","bold":"false"}
+tellraw @a[scores={manual-submarine=1..1}] {"text":"Page 3 - Vehicle Controls","color":"gold","bold":"false"}
+tellraw @a[scores={manual-submarine=1..1}] {"text":"Page 4 - Torpedoes","color":"gold","bold":"false"}
+tellraw @a[scores={manual-submarine=1..1}] {"text":"Page 5 - Despawning","color":"gold","bold":"false"}
 tellraw @a[scores={manual-submarine=1..1}] {"text":"","color":"gold","bold":"false"}
-tellraw @a[scores={manual-submarine=1..1}] {"text":"Disclaimers & Warnings","color":"gold","bold":"false"}
-tellraw @a[scores={manual-submarine=1..1}] {"text":"Top Speed - 10 BPS","color":"gold","bold":"false"}
-tellraw @a[scores={manual-submarine=1..1}] {"text":"Unable to spawn on land.","color":"gold","bold":"false"}
-tellraw @a[scores={manual-submarine=1..1}] {"text":"Surfaces when there are no drivers.","color":"gold","bold":"false"}
-tellraw @a[scores={manual-submarine=1..1}] {"text":"Does not detonate, but despawns if seat is destroyed.","color":"gold","bold":"false"}
-tellraw @a[scores={manual-submarine=1..1}] {"text":"Drops spawn egg on despawn.","color":"gold","bold":"false"}
 tellraw @a[scores={manual-submarine=1..1}] {"text":"","color":"gold","bold":"false"}
-tellraw @a[scores={manual-submarine=1..1}] {"text":"EPILEPSY WARNING: FLASHING OBJECTS MAY TRIGGER SEIZURES DURING FLIGHT.","color":"red","bold":"true","italic":"false"}
+tellraw @a[scores={manual-submarine=1..1}] {"text":"","color":"gold","bold":"false"}
+tellraw @a[scores={manual-submarine=1..1}] {"text":"EPILEPSY WARNING: FLASHING SCREEN AND LIGHTS DURING FLIGHT.","color":"red","bold":"true","italic":"false"}
 
-tellraw @a[scores={manual-submarine=2..2}] {"text":"[Submarine Operator Manual - Page 2 of 4]","color":"gold","bold":"true"}
-tellraw @a[scores={manual-submarine=2..2}] {"text":"","color":"gold","bold":"false"}
-tellraw @a[scores={manual-submarine=2..2}] {"text":"Movement Controls","color":"gold","bold":"false"}
-tellraw @a[scores={manual-submarine=2..2}] {"text":"Hold hotbar slot 1 to decrease throttle.","color":"gold","bold":"false"}
-tellraw @a[scores={manual-submarine=2..2}] {"text":"Hold hotbar slot 3 to increase throttle.","color":"gold","bold":"false"}
-tellraw @a[scores={manual-submarine=2..2}] {"text":"Hold hotbar slot 4-9 to maintain throttle.","color":"gold","bold":"false"}
-tellraw @a[scores={manual-submarine=2..2}] {"text":"Hold hotbar slot 2 to control depth.","color":"gold","bold":"false"}
-tellraw @a[scores={manual-submarine=2..2}] {"text":"Look up to surface, look down to dive.","color":"gold","bold":"false"}
-tellraw @a[scores={manual-submarine=2..2}] {"text":"","color":"gold","bold":"false"}
-tellraw @a[scores={manual-submarine=2..2}] {"text":"EPILEPSY WARNING: FLASHING OBJECTS MAY TRIGGER SEIZURES DURING FLIGHT.","color":"red","bold":"true","italic":"false"}
+tellraw @a[scores={manual-submarine=2..2}] {"text":"[Submarine Operator Manual - Page 2 of 5]","color":"gold","bold":"true"}
+tellraw @a[scores={manual-submarine=2..2}] {"text":"EPILEPSY WARNING","color":"red","bold":"false"}
+tellraw @a[scores={manual-submarine=2..2}] {"text":"The submarine may clip back and forth or flash on the screen.","color":"red","bold":"false"}
+tellraw @a[scores={manual-submarine=2..2}] {"text":"","color":"red","bold":"false"}
+tellraw @a[scores={manual-submarine=2..2}] {"text":"If you believe this may be a problem for you,","color":"red","bold":"false"}
+tellraw @a[scores={manual-submarine=2..2}] {"text":"please disable particles in your settings.","color":"red","bold":"false"}
+tellraw @a[scores={manual-submarine=2..2}] {"text":"","color":"red","bold":"false"}
+tellraw @a[scores={manual-submarine=2..2}] {"text":"","color":"red","bold":"false"}
+tellraw @a[scores={manual-submarine=2..2}] {"text":"","color":"red","bold":"false"}
+tellraw @a[scores={manual-submarine=2..2}] {"text":"EPILEPSY WARNING: FLASHING SCREEN AND LIGHTS DURING FLIGHT.","color":"red","bold":"true","italic":"false"}
 
-tellraw @a[scores={manual-submarine=3..3}] {"text":"[Submarine Operator Manual - Page 3 of 4]","color":"gold","bold":"true"}
+tellraw @a[scores={manual-submarine=3..3}] {"text":"[Submarine Operator Manual - Page 3 of 5]","color":"gold","bold":"true"}
+tellraw @a[scores={manual-submarine=3..3}] {"text":"The submarine is controlled by player orientation and hotbar slot.","color":"gold","bold":"false"}
+tellraw @a[scores={manual-submarine=3..3}] {"text":"The submarine travels where you are facing.","color":"gold","bold":"false"}
+tellraw @a[scores={manual-submarine=3..3}] {"text":"To throttle up, hold hotbar slot 1.","color":"gold","bold":"false"}
+tellraw @a[scores={manual-submarine=3..3}] {"text":"To throttle down, hold hotbar slot 3.","color":"gold","bold":"false"}
+tellraw @a[scores={manual-submarine=3..3}] {"text":"Other hotbar slots will maintain your current speed.","color":"gold","bold":"false"}
+tellraw @a[scores={manual-submarine=3..3}] {"text":"To enable dive/surface controls, hold hotbar slots 1-3.","color":"gold","bold":"false"}
+tellraw @a[scores={manual-submarine=3..3}] {"text":"To dive/surface, look down or up.","color":"gold","bold":"false"}
 tellraw @a[scores={manual-submarine=3..3}] {"text":"","color":"gold","bold":"false"}
-tellraw @a[scores={manual-submarine=3..3}] {"text":"Despawning","color":"gold","bold":"false"}
-tellraw @a[scores={manual-submarine=3..3}] {"text":"Break seat to despawn.","color":"gold","bold":"false"}
-tellraw @a[scores={manual-submarine=3..3}] {"text":"","color":"gold","bold":"false"}
-tellraw @a[scores={manual-submarine=3..3}] {"text":"","color":"gold","bold":"false"}
-tellraw @a[scores={manual-submarine=3..3}] {"text":"","color":"gold","bold":"false"}
-tellraw @a[scores={manual-submarine=3..3}] {"text":"","color":"gold","bold":"false"}
-tellraw @a[scores={manual-submarine=3..3}] {"text":"","color":"gold","bold":"false"}
-tellraw @a[scores={manual-submarine=3..3}] {"text":"EPILEPSY WARNING: FLASHING OBJECTS MAY TRIGGER SEIZURES DURING FLIGHT.","color":"red","bold":"true","italic":"false"}
+tellraw @a[scores={manual-submarine=3..3}] {"text":"EPILEPSY WARNING: FLASHING SCREEN AND LIGHTS DURING FLIGHT.","color":"red","bold":"true","italic":"false"}
 
-tellraw @a[scores={manual-submarine=4..4}] {"text":"[Submarine Operator Manual - Page 4 of 4]","color":"gold","bold":"true"}
+tellraw @a[scores={manual-submarine=4..4}] {"text":"[Submarine Operator Manual - Page 4 of 5]","color":"gold","bold":"true"}
+tellraw @a[scores={manual-submarine=4..4}] {"text":"Torpedoes can be fired by throwing a TNT minecart in the driver seat.","color":"gold","bold":"false"}
+tellraw @a[scores={manual-submarine=4..4}] {"text":"The TNT minecart will be used up.","color":"gold","bold":"false"}
 tellraw @a[scores={manual-submarine=4..4}] {"text":"","color":"gold","bold":"false"}
-tellraw @a[scores={manual-submarine=4..4}] {"text":"Torpedoes","color":"gold","bold":"false"}
-tellraw @a[scores={manual-submarine=4..4}] {"text":"Fire by dropping a TNT minecart while driving.","color":"gold","bold":"false"}
-tellraw @a[scores={manual-submarine=4..4}] {"text":"Torpedoes take time to arm when fired. Detonation fails if unarmed.","color":"gold","bold":"false"}
-tellraw @a[scores={manual-submarine=4..4}] {"text":"Armed torpedoes emit bubble particles, detonates on impact/entity collision.","color":"gold","bold":"false"}
-tellraw @a[scores={manual-submarine=4..4}] {"text":"Affected by gravity outside water.","color":"gold","bold":"false"}
-tellraw @a[scores={manual-submarine=4..4}] {"text":"Detonation destroys blocks even underwater.","color":"gold","bold":"true"}
+tellraw @a[scores={manual-submarine=4..4}] {"text":"Torpedoes have an arming time, and will emit bubble particles when armed.","color":"gold","bold":"false"}
+tellraw @a[scores={manual-submarine=4..4}] {"text":"When armed, torpedoes detonate on impact with terrain or entities.","color":"gold","bold":"false"}
+tellraw @a[scores={manual-submarine=4..4}] {"text":"Torpedoes will detonate on impact with other submarines.","color":"gold","bold":"false"}
+tellraw @a[scores={manual-submarine=4..4}] {"text":"Torpedoes will be affected by gravity outside water and drop.","color":"gold","bold":"false"}
 tellraw @a[scores={manual-submarine=4..4}] {"text":"","color":"gold","bold":"false"}
-tellraw @a[scores={manual-submarine=4..4}] {"text":"EPILEPSY WARNING: FLASHING OBJECTS MAY TRIGGER SEIZURES DURING FLIGHT.","color":"red","bold":"true","italic":"false"}
+tellraw @a[scores={manual-submarine=4..4}] {"text":"EPILEPSY WARNING: FLASHING SCREEN AND LIGHTS DURING FLIGHT.","color":"red","bold":"true","italic":"false"}
 
-tellraw @a[scores={manual-submarine=5..3102021}] {"text":"[Submarine Operator Manual - Page - of 4]","color":"gold","bold":"true"}
-tellraw @a[scores={manual-submarine=5..3102021}] {"text":"","color":"gold","bold":"false"}
-tellraw @a[scores={manual-submarine=5..3102021}] {"text":"Use '/trigger manual-submarine set [1-4]' to access the manual pages.","color":"gold","bold":"false"}
-tellraw @a[scores={manual-submarine=5..3102021}] {"text":"","color":"gold","bold":"false"}
-tellraw @a[scores={manual-submarine=5..3102021}] {"text":"Page 1 - Disclaimers & Warnings","color":"gold","bold":"false"}
-tellraw @a[scores={manual-submarine=5..3102021}] {"text":"Page 2 - Movement Controls","color":"gold","bold":"false"}
-tellraw @a[scores={manual-submarine=5..3102021}] {"text":"Page 3 - Despawning","color":"gold","bold":"false"}
-tellraw @a[scores={manual-submarine=5..3102021}] {"text":"Page 4 - Torpedoes","color":"gold","bold":"false"}
-tellraw @a[scores={manual-submarine=5..3102021}] {"text":"","color":"gold","bold":"false"}
-tellraw @a[scores={manual-submarine=5..3102021}] {"text":"EPILEPSY WARNING: FLASHING OBJECTS MAY TRIGGER SEIZURES DURING FLIGHT.","color":"red","bold":"true","italic":"false"}
+tellraw @a[scores={manual-submarine=5..5}] {"text":"[Submarine Operator Manual - Page 5 of 5]","color":"gold","bold":"true"}
+tellraw @a[scores={manual-submarine=5..5}] {"text":"To despawn your submarine, destroy the submarine seat.","color":"gold","bold":"false"}
+tellraw @a[scores={manual-submarine=5..5}] {"text":"The submarine will despawned if any damage destroys the submarine seat.","color":"gold","bold":"false"}
+tellraw @a[scores={manual-submarine=5..5}] {"text":"The destruction of the submarine does not destroy it permanently.","color":"gold","bold":"false"}
+tellraw @a[scores={manual-submarine=5..5}] {"text":"","color":"gold","bold":"false"}
+tellraw @a[scores={manual-submarine=5..5}] {"text":"","color":"gold","bold":"false"}
+tellraw @a[scores={manual-submarine=5..5}] {"text":"","color":"gold","bold":"false"}
+tellraw @a[scores={manual-submarine=5..5}] {"text":"","color":"gold","bold":"false"}
+tellraw @a[scores={manual-submarine=5..5}] {"text":"","color":"gold","bold":"false"}
+tellraw @a[scores={manual-submarine=5..5}] {"text":"EPILEPSY WARNING: FLASHING SCREEN AND LIGHTS DURING FLIGHT.","color":"red","bold":"true","italic":"false"}
 
-tellraw @a[scores={manual-submarine=3102023..}] {"text":"[Submarine Operator Manual - Page - of 4]","color":"gold","bold":"true"}
-tellraw @a[scores={manual-submarine=3102023..}] {"text":"","color":"gold","bold":"false"}
-tellraw @a[scores={manual-submarine=3102023..}] {"text":"Use '/trigger manual-submarine set #' to access the manual pages, where # is the page number [1-4].","color":"gold","bold":"false"}
-tellraw @a[scores={manual-submarine=3102023..}] {"text":"","color":"gold","bold":"false"}
-tellraw @a[scores={manual-submarine=3102023..}] {"text":"Page 1 - Disclaimers & Warnings","color":"gold","bold":"false"}
-tellraw @a[scores={manual-submarine=3102023..}] {"text":"Page 2 - Movement Controls","color":"gold","bold":"false"}
-tellraw @a[scores={manual-submarine=3102023..}] {"text":"Page 3 - Despawning","color":"gold","bold":"false"}
+tellraw @a[scores={manual-submarine=6..3102021}] {"text":"[Submarine Operator Manual - Page - of 5]","color":"gold","bold":"true"}
+tellraw @a[scores={manual-submarine=6..3102021}] {"text":"Page 1 - Table of Contents","color":"gold","bold":"false"}
+tellraw @a[scores={manual-submarine=6..3102021}] {"text":"Page 2 - Disclaimers & Warnings","color":"gold","bold":"false"}
+tellraw @a[scores={manual-submarine=6..3102021}] {"text":"Page 3 - Vehicle Controls","color":"gold","bold":"false"}
+tellraw @a[scores={manual-submarine=6..3102021}] {"text":"Page 4 - Torpedoes","color":"gold","bold":"false"}
+tellraw @a[scores={manual-submarine=6..3102021}] {"text":"Page 5 - Despawning","color":"gold","bold":"false"}
+tellraw @a[scores={manual-submarine=6..3102021}] {"text":"","color":"gold","bold":"false"}
+tellraw @a[scores={manual-submarine=6..3102021}] {"text":"","color":"gold","bold":"false"}
+tellraw @a[scores={manual-submarine=6..3102021}] {"text":"","color":"gold","bold":"false"}
+tellraw @a[scores={manual-submarine=6..3102021}] {"text":"EPILEPSY WARNING: FLASHING SCREEN AND LIGHTS DURING FLIGHT.","color":"red","bold":"true","italic":"false"}
+
+tellraw @a[scores={manual-submarine=3102023..}] {"text":"[Submarine Operator Manual - Page - of 5]","color":"gold","bold":"true"}
+tellraw @a[scores={manual-submarine=3102023..}] {"text":"Page 1 - Table of Contents","color":"gold","bold":"false"}
+tellraw @a[scores={manual-submarine=3102023..}] {"text":"Page 2 - Disclaimers & Warnings","color":"gold","bold":"false"}
+tellraw @a[scores={manual-submarine=3102023..}] {"text":"Page 3 - Vehicle Controls","color":"gold","bold":"false"}
 tellraw @a[scores={manual-submarine=3102023..}] {"text":"Page 4 - Torpedoes","color":"gold","bold":"false"}
+tellraw @a[scores={manual-submarine=3102023..}] {"text":"Page 5 - Despawning","color":"gold","bold":"false"}
 tellraw @a[scores={manual-submarine=3102023..}] {"text":"","color":"gold","bold":"false"}
-tellraw @a[scores={manual-submarine=3102023..}] {"text":"EPILEPSY WARNING: FLASHING OBJECTS MAY TRIGGER SEIZURES DURING FLIGHT.","color":"red","bold":"true","italic":"false"}
+tellraw @a[scores={manual-submarine=3102023..}] {"text":"","color":"gold","bold":"false"}
+tellraw @a[scores={manual-submarine=3102023..}] {"text":"","color":"gold","bold":"false"}
+tellraw @a[scores={manual-submarine=3102023..}] {"text":"EPILEPSY WARNING: FLASHING SCREEN AND LIGHTS DURING FLIGHT.","color":"red","bold":"true","italic":"false"}
 
 tellraw @a[scores={manual-submarine=3102022..3102022}] {"text":""}
 tellraw @a[scores={manual-submarine=3102022..3102022}] {"text":""}
@@ -89,6 +100,5 @@ execute as @a[tag=iron_lung_reference] at @s run tp @s ~ ~ ~ facing entity @e[ta
 execute as @e[tag=text,tag=iron_lung] at @s run tp @s ^ ^ ^1
 execute as @e[tag=text,tag=iron_lung] at @s run scoreboard players add @s ilrl 1
 execute as @e[tag=text,tag=iron_lung,scores={ilrl=20..}] at @s run kill @s
-
 
 scoreboard players set @a manual-submarine 0

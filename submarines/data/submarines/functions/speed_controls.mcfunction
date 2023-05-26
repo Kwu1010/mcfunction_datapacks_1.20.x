@@ -29,9 +29,9 @@ tag @a remove dive_control
 tag @a[nbt={SelectedItemSlot:0}] add dive_control
 tag @a[nbt={SelectedItemSlot:1}] add dive_control
 tag @a[nbt={SelectedItemSlot:2}] add dive_control
-execute as @e[tag=submarine,tag=controller,tag=on_map_s] at @s if entity @a[tag=driver,distance=..4,tag=dive_control] if score @s current_rotation < up current_rotation if block ~ ~1.6 ~ #submarines:sea_traversable run tp @s ~ ~0.05 ~
-execute as @e[tag=submarine,tag=controller,tag=on_map_s] at @s if entity @a[tag=driver,distance=..4,tag=dive_control] if score @s current_rotation < up current_rotation if block ~ ~.7 ~ #submarines:sea_traversable if block ~ ~1.6 ~ #submarines:non_solid run tp @s ~ ~.2 ~
-execute as @e[tag=submarine,tag=controller,tag=on_map_s] at @s if entity @a[tag=driver,distance=..4,tag=dive_control] if score @s current_rotation > down current_rotation if block ~ ~-.1 ~ #submarines:sea_traversable run tp @s ~ ~-0.05 ~
+execute as @e[tag=submarine,tag=controller,tag=on_map_s] at @s if entity @a[tag=driver,distance=..4,tag=dive_control] if score @s current_rotation < up current_rotation if block ~ ~1.6 ~ #submarines:sea_traversable run tp @s ~ ~0.1 ~
+execute as @e[tag=submarine,tag=controller,tag=on_map_s] at @s if entity @a[tag=driver,distance=..4,tag=dive_control] if score @s current_rotation < up current_rotation if block ~ ~.7 ~ #submarines:sea_traversable if block ~ ~1.6 ~ #submarines:non_solid run tp @s ~ ~.1 ~
+execute as @e[tag=submarine,tag=controller,tag=on_map_s] at @s if entity @a[tag=driver,distance=..4,tag=dive_control] if score @s current_rotation > down current_rotation if block ~ ~-.1 ~ #submarines:sea_traversable run tp @s ~ ~-0.1 ~
 
 # Buoyancy
 execute as @e[tag=submarine,tag=controller,tag=on_map_s] at @s unless entity @a[tag=driver,distance=..4] if block ~ ~1.6 ~ #submarines:sea_traversable run tp @s ~ ~.2 ~
