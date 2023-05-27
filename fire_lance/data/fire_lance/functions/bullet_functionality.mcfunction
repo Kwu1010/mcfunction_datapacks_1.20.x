@@ -1,5 +1,5 @@
 # Missile Lifetime
-scoreboard players add @e[tag=fire_lance,tag=bullet] missile_lifetime 1
+scoreboard players add @e[tag=fire_lance,tag=bullet] bullet_lifetime 1
 
 # Bullet Increment
 execute as @e[tag=fire_lance,tag=bullet] at @s run tp @s ^ ^ ^2 ~ ~0.5

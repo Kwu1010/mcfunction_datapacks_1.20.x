@@ -28,7 +28,7 @@ execute as @e[tag=missile] at @s positioned ^ ^ ^64 if entity @e[tag=target,dist
 execute as @e[tag=missile,tag=lock] at @s run function 202:call_lock_increment
 
 # Increment If No Target Lock
-execute as @e[tag=missile,tag=!lock] at @s run tp @s ^ ^ ^2.2
+execute as @e[tag=missile,tag=!lock] at @s run tp @s ^ ^ ^3
 
 # Particles And Sound
 execute as @e[tag=missile] at @s run particle minecraft:flash ~ ~ ~ 0 0 0 0 1 force

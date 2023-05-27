@@ -5,6 +5,7 @@ execute as @a[tag=hold_fire_lance_loaded,scores={fired_fire_lance=1..}] at @s ru
 # Bullet Init
 execute as @e[tag=bullettemp,tag=fire_lance] at @s at @p[tag=hold_fire_lance_loaded,scores={fired_fire_lance=1..},distance=..4] run tp @s ^ ^ ^-0.1 facing entity @p[tag=hold_fire_lance_loaded,scores={fired_fire_lance=1..},distance=..4]
 execute as @e[tag=bullettemp] at @s run tp @s ^ ^ ^2.5
+execute as @e[tag=bullettemp] at @s if entity @e[tag=plane,distance=..2] run tp @s ^ ^ ^2.5
 execute as @e[tag=bullettemp] run tag @s add bullet
 execute as @e[tag=bullettemp] run tag @s remove bullettemp
 
