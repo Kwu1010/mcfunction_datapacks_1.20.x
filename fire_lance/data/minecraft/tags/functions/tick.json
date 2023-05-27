@@ -1,9 +1,7 @@
 {
     "values": [
 		"fire_lance:init",
-		"fire_lance:missile_targets",
-		"fire_lance:missile_tracking",
-		"fire_lance:missile_detonation",
+		"fire_lance:bullet_functionality",
 		"fire_lance:weapon_fire",
 		"fire_lance:weapon_reload",
 		"fire_lance:weapon_replenish",
