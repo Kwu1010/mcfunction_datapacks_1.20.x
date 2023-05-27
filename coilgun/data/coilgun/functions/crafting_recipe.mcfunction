@@ -1,7 +1,7 @@
-# Fire Lance Recipe
+# Coilgun Recipe
 scoreboard objectives add recipe-coilgun trigger
 scoreboard players enable @a recipe-coilgun
-tellraw @a[scores={recipe-coilgun=1..}] {"text":"[Fire Lance Crafting Recipe]","color":"gold","bold":"true"}
+tellraw @a[scores={recipe-coilgun=1..}] {"text":"[Coilgun Crafting Recipe]","color":"gold","bold":"true"}
 tellraw @a[scores={recipe-coilgun=1..}] {"text":"Ammo Type: Bullet","color":"white","bold":"false","italic":"false"}
 tellraw @a[scores={recipe-coilgun=1..}] {"text":"Capacity: 1 Ammo ","color":"white","bold":"false","italic":"false"}
 tellraw @a[scores={recipe-coilgun=1..}] {"text":"Reload: 5 Seconds","color":"white","bold":"false","italic":"false"}

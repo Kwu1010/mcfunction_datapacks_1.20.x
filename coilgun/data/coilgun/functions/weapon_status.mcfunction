@@ -1,4 +1,4 @@
-# Fire Lance Load Status
+# Coilgun Load Status
 title @a[tag=hold_coilgun_loaded] actionbar {"text":"","bold":"true","extra":[{"text":"Loaded | ","color":"dark_purple"},{"text":"Bullet","color":"white"}]}
 title @a[tag=hold_coilgun,tag=!hold_coilgun_loaded,tag=!hold_coilgun_he] actionbar {"text":"","bold":"true","extra":[{"text":"Empty | ","color":"red"},{"text":"Press Q To Reload","color":"white"}]}
 scoreboard players set divider reload_coilgun 1
