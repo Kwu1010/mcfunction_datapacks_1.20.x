@@ -1,6 +1,6 @@
 # Bullet Spawn
 execute as @a[tag=hold_fire_lance_loaded,scores={fired_fire_lance=1..}] at @s run summon armor_stand ~ ~ ~ {CustomName:"\"Bullet\"",Tags:["fire_lance","bullettemp"],ArmorItems:[{},{},{},{id:"acacia_button",Count:1b}],Invisible:1,NoGravity:1,Pose:{Head:[0f,0.1f,0f]}}
-execute as @a[tag=hold_fire_lance_loaded,scores={fired_fire_lance=1..}] at @s run playsound minecraft:custom.fired_202 player @a ~ ~ ~ 1 1
+execute as @a[tag=hold_fire_lance_loaded,scores={fired_fire_lance=1..}] at @s run playsound minecraft:custom.fired_202 player @a ~ ~ ~ 1 2
 
 # Bullet Init
 execute as @e[tag=bullettemp,tag=fire_lance] at @s at @p[tag=hold_fire_lance_loaded,scores={fired_fire_lance=1..},distance=..4] run tp @s ^ ^ ^-0.1 facing entity @p[tag=hold_fire_lance_loaded,scores={fired_fire_lance=1..},distance=..4]
