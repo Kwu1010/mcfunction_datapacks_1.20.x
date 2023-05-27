@@ -1,0 +1,13 @@
+{
+    "values": [
+		"coilgun:init",
+		"coilgun:bullet_functionality",
+		"coilgun:weapon_fire",
+		"coilgun:weapon_reload",
+		"coilgun:weapon_replenish",
+		"coilgun:weapon_status",
+		"coilgun:weapon_limit",
+		"coilgun:crafting_recipe",
+		"coilgun:call_datapack_items"
+	]
+}
