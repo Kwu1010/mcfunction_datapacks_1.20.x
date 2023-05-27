@@ -14,7 +14,7 @@ execute as @a[tag=fire_lance_replenish_fire_lance,tag=hold_fire_lance] at @s run
 execute as @a[tag=fire_lance_replenish_fire_lance,tag=hold_fire_lance] run item replace entity @s weapon.mainhand with minecraft:knowledge_book{Recipes:["minecraft:crafting_table"],display:{Name:"\"Fire Lance\"",Lore:["\"Empty\""]},CustomModelData:3}
 
 # Fail To Reload Loaded Weapon
-execute as @a[tag=fire_lance_replenish_fire_lance,tag=hold_fire_lance_loaded,scores={dropped_fire_lance=1..}] run tellraw @s[tag=!mute_notifications] {"text":"[Server] Failed to fire_lance_reload, weapon is already loaded!","color":"yellow"}
+execute as @a[tag=fire_lance_replenish_fire_lance,tag=hold_fire_lance_loaded,scores={dropped_fire_lance=1..}] run tellraw @s[tag=!mute_notifications] {"text":"[Server] Failed to reload, weapon is already loaded!","color":"yellow"}
 execute as @a[tag=fire_lance_replenish_fire_lance,tag=hold_fire_lance_loaded,scores={dropped_fire_lance=1..}] run item replace entity @s weapon.mainhand with minecraft:knowledge_book{Recipes:["minecraft:crafting_table"],display:{Name:"\"Fire Lance\"",Lore:["\"Bullet\""]},CustomModelData:3}
 execute as @a[tag=fire_lance_replenish_fire_lance,tag=hold_fire_lance_loaded,scores={dropped_fire_lance=1..}] run tag @s remove fire_lance_replenish_fire_lance
 
