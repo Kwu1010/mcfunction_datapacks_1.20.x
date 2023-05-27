@@ -26,5 +26,4 @@ execute as @e[tag=fire_lance,tag=bullet,tag=impact] at @s positioned ~ ~1 ~ as @
 execute as @e[tag=fire_lance,tag=bullet,tag=impact] at @s run kill @s
 
 # Particles And Sound
-execute as @e[tag=fire_lance,tag=bullet] at @s run particle minecraft:end_rod ~ ~ ~ 0 0 0 0 1 force
-execute as @e[tag=fire_lance,tag=bullet] at @s run playsound minecraft:entity.firework_rocket.launch voice @a ~ ~ ~ 1 0
+execute as @e[tag=fire_lance,tag=bullet] at @s run playsound minecraft:block.dispenser.launch voice @a ~ ~ ~ 1 0
