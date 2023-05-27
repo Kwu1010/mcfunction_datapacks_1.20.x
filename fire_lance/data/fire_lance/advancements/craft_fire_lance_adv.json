@@ -1,13 +1,13 @@
 {
     "criteria": {
-        "202": {
+        "fire_lance": {
             "trigger": "minecraft:recipe_unlocked",
             "conditions": {
-                "recipe": "202:202"
+                "recipe": "fire_lance:fire_lance"
             }
         }
     },
     "rewards": {
-        "function": "202:craft_202"
+        "function": "fire_lance:craft_fire_lance"
     }
 }

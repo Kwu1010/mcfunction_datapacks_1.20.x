@@ -1,17 +1,15 @@
 {
     "values": [
-		"202:init",
-		"202:missile_targets",
-		"202:missile_tracking",
-		"202:missile_detonation",
-		"202:weapon_fire",
-		"202:weapon_reload",
-		"202:weapon_replenish",
-		"202:weapon_status",
-		"202:weapon_limit",
-		"202:flares",
-		"202:flare_gun",
-		"202:crafting_recipe",
-		"202:call_datapack_items"
+		"fire_lance:init",
+		"fire_lance:missile_targets",
+		"fire_lance:missile_tracking",
+		"fire_lance:missile_detonation",
+		"fire_lance:weapon_fire",
+		"fire_lance:weapon_reload",
+		"fire_lance:weapon_replenish",
+		"fire_lance:weapon_status",
+		"fire_lance:weapon_limit",
+		"fire_lance:crafting_recipe",
+		"fire_lance:call_datapack_items"
 	]
 }

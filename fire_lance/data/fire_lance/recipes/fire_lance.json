@@ -1,25 +1,22 @@
 {
   "type": "crafting_shaped",
   "pattern": [
-    "X##",
-    "OOB",
-    "C##"
+    "BA",
+    "ABC",
+    " CD"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:iron_block"
-    },
-    "X": {
-      "item": "minecraft:comparator"
-    },
-    "O": {
+    "A": {
       "item": "minecraft:copper_ingot"
     },
-    "C": {
-      "item": "minecraft:lever"
-    },
     "B": {
-      "item": "minecraft:netherite_ingot"
+      "item": "minecraft:iron_block"
+    },
+    "C": {
+      "item": "minecraft:gold_ingot"
+    },
+    "D": {
+      "item": "minecraft:lightning_rod"
     }
   },
   "result": {

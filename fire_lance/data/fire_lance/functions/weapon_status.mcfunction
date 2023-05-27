@@ -1,5 +1,7 @@
-# M202 Load Status
-title @a[tag=hold_202_ap] actionbar {"text":"","bold":"true","extra":[{"text":"Loaded | ","color":"dark_purple"},{"text":"AP Shell","color":"white"}]}
-title @a[tag=hold_202_he] actionbar {"text":"","bold":"true","extra":[{"text":"Loaded | ","color":"dark_purple"},{"text":"HE Shell","color":"gold"}]}
-title @a[tag=hold_202,tag=!hold_202_ap,tag=!hold_202_he] actionbar {"text":"","bold":"true","extra":[{"text":"Empty | ","color":"red"},{"text":"Press Q To Reload","color":"white"}]}
-execute as @a[tag=hold_202,scores={reload_202=1..}] run title @s actionbar {"text":"","bold":"true","extra":[{"text":"Reloading | ","color":"red"},{"score":{"name":"@s","objective":"reload_202"}},{"text":"%"}]}
+# Fire Lance Load Status
+title @a[tag=hold_fire_lance_loaded] actionbar {"text":"","bold":"true","extra":[{"text":"Loaded | ","color":"dark_purple"},{"text":"Bullet","color":"white"}]}
+title @a[tag=hold_fire_lance,tag=!hold_fire_lance_loaded,tag=!hold_fire_lance_he] actionbar {"text":"","bold":"true","extra":[{"text":"Empty | ","color":"red"},{"text":"Press Q To Reload","color":"white"}]}
+scoreboard players set divider reload_fire_lance 2
+execute as @a[tag=hold_fire_lance,scores={reload_fire_lance=1..}] run scoreboard players operation @s reload_fire_lance_status = @s reload_fire_lance
+execute as @a[tag=hold_fire_lance,scores={reload_fire_lance=1..}] run scoreboard players operation @s reload_fire_lance_status /= divider reload_fire_lance
+execute as @a[tag=hold_fire_lance,scores={reload_fire_lance=1..}] run title @s actionbar {"text":"","bold":"true","extra":[{"text":"Reloading | ","color":"red"},{"score":{"name":"@s","objective":"reload_fire_lance_status"}},{"text":"%"}]}
