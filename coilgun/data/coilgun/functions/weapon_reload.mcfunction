@@ -11,6 +11,6 @@ scoreboard players add @a[tag=reload_coilgun] reload_coilgun 1
 execute as @a[tag=reload_coilgun,tag=!reload_coilgun_loaded,scores={reload_coilgun=100..}] run tellraw @s[tag=!mute_notifications] {"text":"[Server] Failed to reload, equip ammo in your offhand!","color":"yellow"}
 execute as @a[tag=reload_coilgun,tag=reload_coilgun_loaded,scores={reload_coilgun=100..}] run clear @s minecraft:command_block{display:{Name:"\"Bullet\""}} 1
 execute as @a[tag=reload_coilgun,tag=reload_coilgun_loaded,scores={reload_coilgun=100..}] at @s run playsound minecraft:custom.reload_202 player @a ~ ~ ~ 1 1
-execute as @a[tag=reload_coilgun,tag=reload_coilgun_loaded,scores={reload_coilgun=100..}] run item replace entity @s weapon.mainhand with minecraft:knowledge_book{Recipes:["minecraft:crafting_table"],display:{Name:"\"Coilgun\"",Lore:["\"Bullet\""]},CustomModelData:2}
+execute as @a[tag=reload_coilgun,tag=reload_coilgun_loaded,scores={reload_coilgun=100..}] run item replace entity @s weapon.mainhand with minecraft:knowledge_book{Recipes:["minecraft:crafting_table"],display:{Name:"\"Coilgun\"",Lore:["\"Bullet\""]},CustomModelData:2,Damage:30}
 execute as @a[tag=reload_coilgun,scores={reload_coilgun=100..}] run tag @s remove reload_coilgun_loaded
 execute as @a[tag=reload_coilgun,scores={reload_coilgun=100..}] run tag @s remove reload_coilgun
