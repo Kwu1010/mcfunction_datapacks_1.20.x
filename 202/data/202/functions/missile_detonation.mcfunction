@@ -10,7 +10,7 @@ execute as @e[tag=missile,tag=ap_shell] at @s if block ~ ~1 ~ lava run tag @s ad
 execute as @e[tag=missile,tag=ap_shell,scores={missile_lifetime=100..}] run tag @s add impact
 
 # Impact Function
-execute as @e[tag=missile,tag=impact] at @s as @e[distance=..2] run damage @s 20 minecraft:falling_anvil
+execute as @e[tag=missile,tag=impact] at @s as @e[distance=..2] run damage @s 30 minecraft:falling_anvil
 execute as @e[tag=missile,tag=impact] at @s run kill @s
 
 # Detonation Conditions: In Ground Or On Entity
