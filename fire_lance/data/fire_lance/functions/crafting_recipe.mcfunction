@@ -4,7 +4,7 @@ scoreboard players enable @a recipe-fire_lance
 tellraw @a[scores={recipe-fire_lance=1..}] {"text":"[Fire Lance Crafting Recipe]","color":"gold","bold":"true"}
 tellraw @a[scores={recipe-fire_lance=1..}] {"text":"Ammo Type: Bullet","color":"white","bold":"false","italic":"false"}
 tellraw @a[scores={recipe-fire_lance=1..}] {"text":"Capacity: 1 Ammo ","color":"white","bold":"false","italic":"false"}
-tellraw @a[scores={recipe-fire_lance=1..}] {"text":"Reload: 10 Seconds","color":"white","bold":"false","italic":"false"}
+tellraw @a[scores={recipe-fire_lance=1..}] {"text":"Reload: 5 Seconds","color":"white","bold":"false","italic":"false"}
 tellraw @a[scores={recipe-fire_lance=1..}] {"text":"","color":"white","bold":"false","italic":"false"}
 tellraw @a[scores={recipe-fire_lance=1..}] {"text":"EPILEPSY WARNING: FLASHING LIGHTS MAY TRIGGER SEIZURES DURING USE.","color":"red","bold":"true","italic":"false"}
 tellraw @a[scores={recipe-fire_lance=1..}] {"text":"Item Grid:","color":"gold"}
