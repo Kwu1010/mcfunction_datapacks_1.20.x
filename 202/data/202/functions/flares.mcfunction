@@ -1,6 +1,6 @@
 # RNG Bounds
 scoreboard players set lower_bound rng 0
-scoreboard players set upper_bound rng 25000
+scoreboard players set upper_bound rng 40000
 
 # Flare Functions Off Probability Using Seeded Random RNG Library/Datapack (Set To 20% Based Off Bounds)
 execute as @e[tag=flare,tag=!launched] if score rng rng > lower_bound rng if score rng rng < upper_bound rng run tag @s add target
