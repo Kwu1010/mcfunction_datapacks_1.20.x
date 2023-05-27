@@ -6,14 +6,14 @@
   ],
   "key": {
     "X": {
-      "item": "minecraft:dirt"
+      "item": "minecraft:mud"
     },
     "O": {
-      "item": "minecraft:red_dye"
+      "item": "minecraft:gravel"
     }
   },
    "result": {
-    "item": "minecraft:netherrack",
+    "item": "minecraft:soul_soil",
     "count": 2
   }
 }

@@ -6,14 +6,14 @@
   ],
   "key": {
     "X": {
-      "item": "minecraft:dirt"
+      "item": "minecraft:bone_meal"
     },
     "O": {
-      "item": "minecraft:red_dye"
+      "item": "minecraft:quartz"
     }
   },
    "result": {
-    "item": "minecraft:netherrack",
-    "count": 2
+    "item": "minecraft:calcite",
+    "count": 1
   }
 }
