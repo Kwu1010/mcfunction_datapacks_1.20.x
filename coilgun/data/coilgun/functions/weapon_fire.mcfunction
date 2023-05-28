@@ -1,6 +1,6 @@
 # Bullet Spawn
-execute as @a[tag=hold_coilgun_loaded,scores={fired_coilgun=1..}] at @s run summon armor_stand ~ ~ ~ {CustomName:"\"Bullet\"",Tags:["coilgun","bullettemp"],ArmorItems:[{},{},{},{id:"acacia_button",Count:1b}],Invisible:1,NoGravity:1,Pose:{Head:[0f,0.1f,0f]}}
-execute as @a[tag=hold_coilgun_loaded,scores={fired_coilgun=1..}] at @s run playsound minecraft:custom.fired_202 player @a ~ ~ ~ 1 2
+execute as @a[tag=hold_coilgun_loaded,scores={fired_coilgun=1..},tag=!reload_coilgun] at @s run summon armor_stand ~ ~ ~ {CustomName:"\"Bullet\"",Tags:["coilgun","bullettemp"],ArmorItems:[{},{},{},{id:"acacia_button",Count:1b}],Invisible:1,NoGravity:1,Pose:{Head:[0f,0.1f,0f]}}
+execute as @a[tag=hold_coilgun_loaded,scores={fired_coilgun=1..},tag=!reload_coilgun] at @s run playsound minecraft:custom.fired_202 player @a ~ ~ ~ 1 2
 
 # Bullet Init
 execute as @e[tag=bullettemp,tag=coilgun] at @s at @p[tag=hold_coilgun_loaded,scores={fired_coilgun=1..},distance=..4] run tp @s ^ ^ ^-0.1 facing entity @p[tag=hold_coilgun_loaded,scores={fired_coilgun=1..},distance=..4]
