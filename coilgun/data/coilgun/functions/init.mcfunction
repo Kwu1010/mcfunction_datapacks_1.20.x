@@ -6,3 +6,4 @@ scoreboard objectives add reload_coilgun dummy
 scoreboard objectives add reload_coilgun_status dummy
 scoreboard objectives add bullet_count dummy
 scoreboard objectives add bullet_replenish_count dummy
+scoreboard objectives add bullet_count_offhand dummy
