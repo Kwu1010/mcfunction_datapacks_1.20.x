@@ -6,7 +6,7 @@ execute as @a[tag=pilot] unless entity @s[nbt={RootVehicle:{Entity:{id:"minecraf
 tag @a[nbt={RootVehicle:{Entity:{id:"minecraft:block_display",Tags:["plane"]}}}] add pilot
 
 # Grant Invis To Pilots
-execute as @a[tag=pilot] if score @s vehicle_speed >= global vehicle_speed run effect give @s invisibility 1 255 true
+execute as @a[tag=pilot] if score @s vehicle_speed >= flight_threshold vehicle_speed run effect give @s invisibility 1 255 true
 execute as @a[tag=pilot] if score @s change_counter > avia change_counter run effect give @s invisibility 1 255 true
 
 # Seats Are Invisible
