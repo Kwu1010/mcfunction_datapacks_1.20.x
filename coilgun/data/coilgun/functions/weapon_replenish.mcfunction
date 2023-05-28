@@ -43,6 +43,7 @@ execute as @a[tag=coilgun_replenish_coilgun,tag=hold_coilgun,scores={bullet_coun
 
 # Fail To Reload Loaded Weapon
 execute as @a[tag=coilgun_replenish_coilgun,tag=hold_coilgun_loaded,scores={dropped_coilgun=1..,bullet_count=30..30}] run tellraw @s[tag=!mute_notifications] {"text":"[Server] Failed to reload, weapon is already loaded!","color":"yellow"}
+execute as @a[tag=coilgun_replenish_coilgun,tag=hold_coilgun_loaded,scores={dropped_coilgun=1..,bullet_count=30..30}] run tag @s remove reload_coilgun
 execute as @a[tag=coilgun_replenish_coilgun,tag=hold_coilgun_loaded,scores={dropped_coilgun=1..,bullet_count=..0}] run item replace entity @s weapon.mainhand with minecraft:knowledge_book{Recipes:["minecraft:crafting_table"],display:{Name:"\"Coilgun\"",Lore:["\"Empty\""]},CustomModelData:2,Damage:0}
 execute as @a[tag=coilgun_replenish_coilgun,tag=hold_coilgun_loaded,scores={dropped_coilgun=1..,bullet_count=1..1}] run item replace entity @s weapon.mainhand with minecraft:knowledge_book{Recipes:["minecraft:crafting_table"],display:{Name:"\"Coilgun\"",Lore:["\"Bullet\""]},CustomModelData:2,Damage:1}
 execute as @a[tag=coilgun_replenish_coilgun,tag=hold_coilgun_loaded,scores={dropped_coilgun=1..,bullet_count=2..2}] run item replace entity @s weapon.mainhand with minecraft:knowledge_book{Recipes:["minecraft:crafting_table"],display:{Name:"\"Coilgun\"",Lore:["\"Bullet\""]},CustomModelData:2,Damage:2}
