@@ -10,7 +10,7 @@ execute as @e[tag=fire_lance,tag=bullet] at @s unless block ~ ~1 ~ #fire_lance:n
 execute as @e[tag=fire_lance,tag=bullet,scores={bullet_lifetime=100..}] run tag @s add impact
 
 # Impact Function
-execute as @e[tag=fire_lance,tag=bullet,tag=impact] at @s positioned ~ ~1 ~ as @e[distance=..2] run damage @s 8 minecraft:magic
+execute as @e[tag=fire_lance,tag=bullet,tag=impact] at @s positioned ~ ~1 ~ as @e[distance=..2,type=!#fire_lance:non_targets] run damage @s 8 minecraft:magic
 execute as @e[tag=fire_lance,tag=bullet,tag=impact] at @s run kill @s
 
 # Bullet Increment
@@ -22,7 +22,7 @@ execute as @e[tag=fire_lance,tag=bullet] at @s unless block ~ ~1 ~ #fire_lance:n
 execute as @e[tag=fire_lance,tag=bullet,scores={bullet_lifetime=100..}] run tag @s add impact
 
 # Impact Function
-execute as @e[tag=fire_lance,tag=bullet,tag=impact] at @s positioned ~ ~1 ~ as @e[distance=..2] run damage @s 8 minecraft:magic
+execute as @e[tag=fire_lance,tag=bullet,tag=impact] at @s positioned ~ ~1 ~ as @e[distance=..2,type=!#fire_lance:non_targets] run damage @s 8 minecraft:magic
 execute as @e[tag=fire_lance,tag=bullet,tag=impact] at @s run kill @s
 
 # Particles And Sound

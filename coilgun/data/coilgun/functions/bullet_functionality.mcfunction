@@ -10,7 +10,7 @@ execute as @e[tag=coilgun,tag=bullet] at @s unless block ~ ~1 ~ #coilgun:non_sol
 execute as @e[tag=coilgun,tag=bullet,scores={bullet_lifetime=100..}] run tag @s add impact
 
 # Impact Function
-execute as @e[tag=coilgun,tag=bullet,tag=impact] at @s positioned ~ ~1 ~ as @e[distance=..2] run damage @s 8 minecraft:magic
+execute as @e[tag=coilgun,tag=bullet,tag=impact] at @s positioned ~ ~1 ~ as @e[distance=..2,type=!#coilgun:non_targets] run damage @s 8 minecraft:magic
 execute as @e[tag=coilgun,tag=bullet,tag=impact] at @s run kill @s
 
 # Bullet Increment
@@ -22,7 +22,7 @@ execute as @e[tag=coilgun,tag=bullet] at @s unless block ~ ~1 ~ #coilgun:non_sol
 execute as @e[tag=coilgun,tag=bullet,scores={bullet_lifetime=100..}] run tag @s add impact
 
 # Impact Function
-execute as @e[tag=coilgun,tag=bullet,tag=impact] at @s positioned ~ ~1 ~ as @e[distance=..2] run damage @s 8 minecraft:magic
+execute as @e[tag=coilgun,tag=bullet,tag=impact] at @s positioned ~ ~1 ~ as @e[distance=..2,type=!#coilgun:non_targets] run damage @s 8 minecraft:magic
 execute as @e[tag=coilgun,tag=bullet,tag=impact] at @s run kill @s
 
 # Particles And Sound
