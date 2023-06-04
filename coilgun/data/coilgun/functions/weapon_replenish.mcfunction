@@ -1,6 +1,7 @@
 # Replenish Duplicate Thrown Weapons (When Holding Weapon & Throwing Out Another, Causing Overwrite And Deletion)
 tag @a[nbt={SelectedItem:{id:"minecraft:knowledge_book",tag:{display:{Name:"\"Coilgun\""}}}},scores={dropped_coilgun=1..}] add hold_coilgun_duplicate
-execute as @a[tag=hold_coilgun_duplicate] run give @s minecraft:knowledge_book{Recipes:["minecraft:crafting_table"],display:{Name:"\"Coilgun\"",Lore:["\"Empty\""],Damage:0},CustomModelData:2}
+execute as @a[tag=hold_coilgun_duplicate] run scoreboard players set @s dropped_coilgun 0
+execute as @a[tag=hold_coilgun_duplicate] run tag @s remove reload_coilgun
 tag @a remove hold_coilgun_duplicate
 
 # Test If Weapon Fired Or Dropped
