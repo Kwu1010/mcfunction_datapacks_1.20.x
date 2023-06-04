@@ -1,6 +1,7 @@
 # Replenish Duplicate Thrown Weapons (When Holding Weapon & Throwing Out Another, Causing Overwrite And Deletion)
 tag @a[nbt={SelectedItem:{id:"minecraft:knowledge_book",tag:{display:{Name:"\"M202\""}}}},scores={dropped_202=1..}] add hold_202_duplicate
-execute as @a[tag=hold_202_duplicate] run give @s minecraft:knowledge_book{Recipes:["minecraft:crafting_table"],display:{Name:"\"M202\"",Lore:["\"Empty\""]},CustomModelData:1}
+execute as @a[tag=hold_202_duplicate] run scoreboard players set @s dropped_202 0
+execute as @a[tag=hold_202_duplicate] run tag @s remove reload_202
 tag @a remove hold_202_duplicate
 
 # Test If Weapon Fired Or Dropped

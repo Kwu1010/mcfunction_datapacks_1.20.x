@@ -1,6 +1,7 @@
 # Replenish Duplicate Thrown Weapons (When Holding Weapon & Throwing Out Another, Causing Overwrite And Deletion)
 tag @a[nbt={SelectedItem:{id:"minecraft:knowledge_book",tag:{display:{Name:"\"Flare Gun\""}}}},scores={dropped_flaregun=1..}] add hold_flaregun_duplicate
-execute as @a[tag=hold_flaregun_duplicate] run give @s minecraft:knowledge_book{Recipes:["minecraft:crafting_table"],display:{Name:"\"Flare Gun\"",Lore:["\"Empty\""]},CustomModelData:4}
+execute as @a[tag=hold_flaregun_duplicate] run scoreboard players set @s dropped_flaregun 0
+execute as @a[tag=hold_flaregun_duplicate] run tag @s remove reload_flaregun
 tag @a remove hold_flaregun_duplicate
 
 # Holding Flare Gun In Offhand

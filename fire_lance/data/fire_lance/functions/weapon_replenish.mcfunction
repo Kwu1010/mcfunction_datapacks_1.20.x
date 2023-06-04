@@ -1,6 +1,7 @@
 # Replenish Duplicate Thrown Weapons (When Holding Weapon & Throwing Out Another, Causing Overwrite And Deletion)
 tag @a[nbt={SelectedItem:{id:"minecraft:knowledge_book",tag:{display:{Name:"\"Fire Lance\""}}}},scores={dropped_fire_lance=1..}] add hold_fire_lance_duplicate
-execute as @a[tag=hold_fire_lance_duplicate] run give @s minecraft:knowledge_book{Recipes:["minecraft:crafting_table"],display:{Name:"\"Fire Lance\"",Lore:["\"Empty\""]},CustomModelData:3}
+execute as @a[tag=hold_fire_lance_duplicate] run scoreboard players set @s dropped_fire_lance 0
+execute as @a[tag=hold_fire_lance_duplicate] run tag @s remove fire_lance_reload
 tag @a remove hold_fire_lance_duplicate
 
 # Test If Weapon Fired Or Dropped
