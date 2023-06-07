@@ -24,9 +24,9 @@ tag @e[tag=warp_over] remove off_west
 tag @e[tag=warp_over] remove off_east
 tag @e[tag=warp_over] remove on_map
 execute as @e[tag=warp_over] at @s if dimension minecraft:overworld if entity @s[z=-6144,dz=-100] at @s run tag @s add off_north
-execute as @e[tag=warp_over] at @s if dimension minecraft:overworld if entity @s[z=-6144,dz=100] at @s run tag @s add off_south
+execute as @e[tag=warp_over] at @s if dimension minecraft:overworld if entity @s[z=6143,dz=100] at @s run tag @s add off_south
 execute as @e[tag=warp_over] at @s if dimension minecraft:overworld if entity @s[x=-12288,dx=-100] at @s run tag @s add off_west
-execute as @e[tag=warp_over] at @s if dimension minecraft:overworld if entity @s[x=-12288,dx=100] at @s run tag @s add off_east
+execute as @e[tag=warp_over] at @s if dimension minecraft:overworld if entity @s[x=12287,dx=100] at @s run tag @s add off_east
 tag @e[tag=warp_over,tag=!off_north,tag=!off_south,tag=!off_west,tag=!off_east] add on_map
 
 # TODO: Test If Server Crash Threshold Is Reached VIA Boat Teleport W/ Player & Entity
