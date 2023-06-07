@@ -1,8 +1,8 @@
 # Wrap Over Coordinates
-execute as @e[tag=warp_over,tag=off_north] at @s run tp @s ~ ~ 4605
-execute as @e[tag=warp_over,tag=off_south] at @s run tp @s ~ ~ -4606
-execute as @e[tag=warp_over,tag=off_west] at @s run tp @s 9213 ~ ~
-execute as @e[tag=warp_over,tag=off_east] at @s run tp @s -9214 ~ ~
+execute as @e[tag=warp_over,tag=off_north] at @s run tp @s ~ ~ 6142
+execute as @e[tag=warp_over,tag=off_south] at @s run tp @s ~ ~ -6143
+execute as @e[tag=warp_over,tag=off_west] at @s run tp @s 12286 ~ ~
+execute as @e[tag=warp_over,tag=off_east] at @s run tp @s -12287 ~ ~
 
 # Temporary Damage Immunity
 effect give @e[tag=warp_over,tag=!on_map] minecraft:resistance 4 255 true
@@ -23,10 +23,10 @@ tag @e[tag=warp_over] remove off_south
 tag @e[tag=warp_over] remove off_west
 tag @e[tag=warp_over] remove off_east
 tag @e[tag=warp_over] remove on_map
-execute as @e[tag=warp_over] at @s if dimension minecraft:overworld if entity @s[z=-4608,dz=-100] at @s run tag @s add off_north
-execute as @e[tag=warp_over] at @s if dimension minecraft:overworld if entity @s[z=4607,dz=100] at @s run tag @s add off_south
-execute as @e[tag=warp_over] at @s if dimension minecraft:overworld if entity @s[x=-9216,dx=-100] at @s run tag @s add off_west
-execute as @e[tag=warp_over] at @s if dimension minecraft:overworld if entity @s[x=9215,dx=100] at @s run tag @s add off_east
+execute as @e[tag=warp_over] at @s if dimension minecraft:overworld if entity @s[z=-6144,dz=-100] at @s run tag @s add off_north
+execute as @e[tag=warp_over] at @s if dimension minecraft:overworld if entity @s[z=-6144,dz=100] at @s run tag @s add off_south
+execute as @e[tag=warp_over] at @s if dimension minecraft:overworld if entity @s[x=-12288,dx=-100] at @s run tag @s add off_west
+execute as @e[tag=warp_over] at @s if dimension minecraft:overworld if entity @s[x=-12288,dx=100] at @s run tag @s add off_east
 tag @e[tag=warp_over,tag=!off_north,tag=!off_south,tag=!off_west,tag=!off_east] add on_map
 
 # TODO: Test If Server Crash Threshold Is Reached VIA Boat Teleport W/ Player & Entity
