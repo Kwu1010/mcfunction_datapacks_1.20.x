@@ -9,11 +9,13 @@ recipe give @a extra_recipes:glowstone
 recipe give @a extra_recipes:magma_block
 recipe give @a extra_recipes:magma_cream
 recipe give @a extra_recipes:nametag
-recipe give @a extra_recipes:nether_star
 recipe give @a extra_recipes:nether_wart_block
 recipe give @a extra_recipes:netherrack
 recipe give @a extra_recipes:purpur_dye
 recipe give @a extra_recipes:purpur_stone
+recipe give @a extra_recipes:quartz
+recipe give @a extra_recipes:quartz_dye
+recipe give @a extra_recipes:quartz_iron
 recipe give @a extra_recipes:red_nether_brick
 recipe give @a extra_recipes:quartz
 recipe give @a extra_recipes:saddle
