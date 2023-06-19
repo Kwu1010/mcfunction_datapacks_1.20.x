@@ -3,6 +3,7 @@ recipe give @a extra_recipes:bedrock
 recipe give @a extra_recipes:blackstone
 recipe give @a extra_recipes:calcite
 recipe give @a extra_recipes:cheese
+recipe give @a extra_recipes:crimson_nylium
 recipe give @a extra_recipes:dragon_breath
 recipe give @a extra_recipes:end_stone
 recipe give @a extra_recipes:glowstone
@@ -23,4 +24,5 @@ recipe give @a extra_recipes:soul_sand
 recipe give @a extra_recipes:soul_soil
 recipe give @a extra_recipes:sus_gravel
 recipe give @a extra_recipes:sus_sand
+recipe give @a extra_recipes:warped_nylium
 recipe give @a extra_recipes:warped_wart_block
