@@ -1,8 +1,8 @@
 # Wrap Over Coordinates
-execute as @e[tag=warp_over,tag=off_north] at @s run tp @s ~ ~ 6142
-execute as @e[tag=warp_over,tag=off_south] at @s run tp @s ~ ~ -6143
-execute as @e[tag=warp_over,tag=off_west] at @s run tp @s 12286 ~ ~
-execute as @e[tag=warp_over,tag=off_east] at @s run tp @s -12287 ~ ~
+execute as @e[tag=warp_over,tag=off_north] at @s run tp @s ~ ~ 6140
+execute as @e[tag=warp_over,tag=off_south] at @s run tp @s ~ ~ -6141
+execute as @e[tag=warp_over,tag=off_west] at @s run tp @s 12284 ~ ~
+execute as @e[tag=warp_over,tag=off_east] at @s run tp @s -12285 ~ ~
 
 # Temporary Damage Immunity
 effect give @e[tag=warp_over,tag=!on_map] minecraft:resistance 4 255 true
