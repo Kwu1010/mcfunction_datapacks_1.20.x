@@ -6,10 +6,10 @@
   ],
   "key": {
     "X": {
-      "item": "minecraft:cobbled_deepslate"
+      "item": "minecraft:basalt"
     },
     "O": {
-      "item": "minecraft:cobbled_deepslate"
+      "item": "minecraft:cobblestone"
     }
   },
    "result": {

@@ -7,11 +7,14 @@ recipe give @a extra_recipes:crimson_nylium
 recipe give @a extra_recipes:dragon_breath
 recipe give @a extra_recipes:end_stone
 recipe give @a extra_recipes:glowstone
+recipe give @a extra_recipes:god_apple
 recipe give @a extra_recipes:magma_block
 recipe give @a extra_recipes:magma_cream
 recipe give @a extra_recipes:nametag
 recipe give @a extra_recipes:nether_wart_block
 recipe give @a extra_recipes:netherrack
+recipe give @a extra_recipes:prismarine_crystal
+recipe give @a extra_recipes:prismarine_shard
 recipe give @a extra_recipes:purpur_dye
 recipe give @a extra_recipes:purpur_stone
 recipe give @a extra_recipes:quartz
