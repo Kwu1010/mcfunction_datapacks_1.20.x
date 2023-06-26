@@ -4,6 +4,7 @@ recipe give @a extra_recipes:blackstone
 recipe give @a extra_recipes:calcite
 recipe give @a extra_recipes:cheese
 recipe give @a extra_recipes:crimson_nylium
+recipe give @a extra_recipes:crying_obsidian
 recipe give @a extra_recipes:dragon_breath
 recipe give @a extra_recipes:end_stone
 recipe give @a extra_recipes:end_rod
