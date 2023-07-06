@@ -6,13 +6,15 @@ recipe give @a extra_recipes:cheese
 recipe give @a extra_recipes:crimson_nylium
 recipe give @a extra_recipes:crying_obsidian
 recipe give @a extra_recipes:dragon_breath
-recipe give @a extra_recipes:end_stone
+recipe give @a extra_recipes:elytra
 recipe give @a extra_recipes:end_rod
+recipe give @a extra_recipes:end_stone
 recipe give @a extra_recipes:froglight_ochre
 recipe give @a extra_recipes:froglight_pearlescent
 recipe give @a extra_recipes:froglight_verdant
 recipe give @a extra_recipes:glowstone
 recipe give @a extra_recipes:god_apple
+recipe give @a extra_recipes:ice
 recipe give @a extra_recipes:magma_block
 recipe give @a extra_recipes:magma_cream
 recipe give @a extra_recipes:mycelium
