@@ -2,6 +2,10 @@ recipe give @a extra_recipes:basalt
 recipe give @a extra_recipes:bedrock
 recipe give @a extra_recipes:blackstone
 recipe give @a extra_recipes:calcite
+recipe give @a extra_recipes:chain_boots
+recipe give @a extra_recipes:chain_chestplate
+recipe give @a extra_recipes:chain_leggings
+recipe give @a extra_recipes:chain_helmet
 recipe give @a extra_recipes:cheese
 recipe give @a extra_recipes:crimson_nylium
 recipe give @a extra_recipes:crying_obsidian
@@ -16,6 +20,7 @@ recipe give @a extra_recipes:glowstone
 recipe give @a extra_recipes:god_apple
 recipe give @a extra_recipes:ice
 recipe give @a extra_recipes:ice_block
+recipe give @a extra_recipes:lodestone
 recipe give @a extra_recipes:magma_block
 recipe give @a extra_recipes:magma_cream
 recipe give @a extra_recipes:mycelium
