@@ -23,6 +23,7 @@ recipe give @a extra_recipes:ice_block
 recipe give @a extra_recipes:lodestone
 recipe give @a extra_recipes:magma_block
 recipe give @a extra_recipes:magma_cream
+recipe give @a extra_recipes:mangrove
 recipe give @a extra_recipes:mycelium
 recipe give @a extra_recipes:nametag
 recipe give @a extra_recipes:nether_wart_block
