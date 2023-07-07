@@ -15,6 +15,7 @@ recipe give @a extra_recipes:froglight_verdant
 recipe give @a extra_recipes:glowstone
 recipe give @a extra_recipes:god_apple
 recipe give @a extra_recipes:ice
+recipe give @a extra_recipes:ice_block
 recipe give @a extra_recipes:magma_block
 recipe give @a extra_recipes:magma_cream
 recipe give @a extra_recipes:mycelium
