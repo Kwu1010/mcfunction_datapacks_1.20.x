@@ -45,7 +45,7 @@ scoreboard players set @a recipe-he_shell 0
 
 # Flare Gun Recipe
 scoreboard objectives add recipe-flaregun trigger
-scoreboard players enable @a recipe-flaregun
+# scoreboard players enable @a recipe-flaregun
 tellraw @a[scores={recipe-flaregun=1..}] {"text":"[Flare Gun Crafting Recipe]","color":"gold","bold":"true"}
 tellraw @a[scores={recipe-flaregun=1..}] {"text":"Ammo Type: Flare","color":"white","bold":"false","italic":"false"}
 tellraw @a[scores={recipe-flaregun=1..}] {"text":"Capacity: 1 Ammo","color":"white","bold":"false","italic":"false"}
@@ -60,7 +60,7 @@ scoreboard players set @a recipe-flaregun 0
 
 # Flare Recipe
 scoreboard objectives add recipe-flare trigger
-scoreboard players enable @a recipe-flare
+# scoreboard players enable @a recipe-flare
 tellraw @a[scores={recipe-flare=1..}] {"text":"[Flare Crafting Recipe]","color":"gold","bold":"true"}
 tellraw @a[scores={recipe-flare=1..}] {"text":"Ammo Type: Flare","color":"white","bold":"false","italic":"false"}
 tellraw @a[scores={recipe-flare=1..}] {"text":"Entity Damage: None","color":"white","bold":"false","italic":"false"}

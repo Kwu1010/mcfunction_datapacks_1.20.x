@@ -11,7 +11,7 @@ execute as @e[tag=missile,tag=ap_shell] at @s if block ^ ^1 ^ lava run tag @s ad
 execute as @e[tag=missile,tag=ap_shell,scores={missile_lifetime=100..}] run tag @s add impact
 
 # Impact Function
-execute as @e[tag=missile,tag=impact] at @s as @e[distance=..2,type=!#202:non_targets] run damage @s 30 minecraft:falling_anvil
+execute as @e[tag=missile,tag=impact] at @s as @e[distance=..2,type=!#202:non_targets] run damage @s 25 minecraft:arrow
 execute as @e[tag=missile,tag=impact] at @s run kill @s
 
 # Detonation Conditions: In Ground Or On Entity
@@ -24,5 +24,5 @@ execute as @e[tag=missile,tag=he_shell] at @s if block ^ ^1 ^ lava run tag @s ad
 execute as @e[tag=missile,tag=he_shell,scores={missile_lifetime=100..}] run tag @s add detonate
 
 # Detonation Function
-execute as @e[tag=missile,tag=detonate] at @s run summon creeper ~ ~1 ~ {ExplosionRadius:4,ignited:1b,Fuse:0s}
+execute as @e[tag=missile,tag=detonate] at @s run summon creeper ~ ~1 ~ {ExplosionRadius:5,ignited:1b,Fuse:0s}
 execute as @e[tag=missile,tag=detonate] at @s run kill @s

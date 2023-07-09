@@ -10,7 +10,7 @@ execute as @e[tag=coilgun,tag=bullet] at @s unless block ~ ~1 ~ #coilgun:non_sol
 execute as @e[tag=coilgun,tag=bullet,scores={bullet_lifetime=100..}] run tag @s add impact
 
 # Impact Function
-execute as @e[tag=coilgun,tag=bullet,tag=impact] at @s positioned ~ ~1 ~ as @e[distance=..2,type=!#coilgun:non_targets,type=!witch] run damage @s 8 minecraft:magic
+execute as @e[tag=coilgun,tag=bullet,tag=impact] at @s positioned ~ ~1 ~ as @e[distance=..2,type=!#coilgun:non_targets,type=!witch] run damage @s 6 minecraft:magic
 execute as @e[tag=coilgun,tag=bullet,tag=impact] at @s positioned ~ ~1 ~ as @e[distance=..2,type=witch] run damage @s 8 minecraft:arrow
 execute as @e[tag=coilgun,tag=bullet,tag=impact] at @s run kill @s
 
@@ -23,7 +23,7 @@ execute as @e[tag=coilgun,tag=bullet] at @s unless block ~ ~1 ~ #coilgun:non_sol
 execute as @e[tag=coilgun,tag=bullet,scores={bullet_lifetime=100..}] run tag @s add impact
 
 # Impact Function
-execute as @e[tag=coilgun,tag=bullet,tag=impact] at @s positioned ~ ~1 ~ as @e[distance=..2,type=!#coilgun:non_targets,type=!witch] run damage @s 8 minecraft:magic
+execute as @e[tag=coilgun,tag=bullet,tag=impact] at @s positioned ~ ~1 ~ as @e[distance=..2,type=!#coilgun:non_targets,type=!witch] run damage @s 6 minecraft:magic
 execute as @e[tag=coilgun,tag=bullet,tag=impact] at @s positioned ~ ~1 ~ as @e[distance=..2,type=witch] run damage @s 8 minecraft:arrow
 execute as @e[tag=coilgun,tag=bullet,tag=impact] at @s run kill @s
 
